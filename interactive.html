@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <title>Quiz/title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <title>OT CS Capstone</title>
 </head>
-<body>
-  <!--Navbar-->
-  <div data-include="nav"></div>
-  
-    
-    
-  <!--Whole page container div-->
-  <div class="container">
 
-<p>Information about Stress</p>
+<body>
+  <div data-include="nav"></div>
+  <div class="container">
+    <h1 class="display-1 text-center">Stress Quiz</h1>
+    <div>
+      <h2>Purpose:</h2>
+      <p>To inform if you are stressed and ways to manange it</p>
+    </div>
+
+    <form>
+      <!-- radio -->
+      <h4></h4>
+      <input type="radio" id="valo" name="sage" value="Yes">
+      <label for="valo">Yes</label>
+      <br>
+      <input type="radio" id="valo" name="sage" value="No">
+      <label for="valo">No</label>
+      </br>
+
+      <!-- select -->
+      <br>
+      <h4>What other Sentinel agents should I do?</h4>
+      <select id="sentinels" name="agents">
+        <option value="kj">Killjoy</option>
+        <option value="cy">Cypher</option>
+      </select>
+      </br>
+
+      <!-- text -->
+      <br>
+      <h4>Please let me know what other agents(from other classes, like Duelists, Controllers, and Initiators) you want
+        me to do.</h4>
+      <label for="agents">Other Agents: </label>
+      <input type="text" id="agents" name="classes">
+
+      <!-- submit -->
+      <br>
+      <input type="submit" value="Submit">
+      </br>
+    </form>
+
+
 
   </div>
   <!--Bootstrap and other JS scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="scripts/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="scripts/scripts.js"></script>
 </body>
+
 </html>
