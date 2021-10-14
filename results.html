@@ -15,86 +15,21 @@
   <div data-include="nav"></div>
   <div class="container">
     <h1 class="display-1 text-center">Your Results</h1>
-    <h2>Stress Level: #</h2>
+    
     <div id="results">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Family</th>
-            <th scope="col">Work/School</th>
-            <th scope="col">Society</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <ul>
-                <li>..</li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>..</li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>..</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <ul>
-                <li>..</li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>..</li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>..</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <ul>
-                <li>..</li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>..</li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>..</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <script type="text/javascript">
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const destination = urlParams.get('destination');
+    
+        if (destination == "forms") {
+          window.location.replace("forms.html");
+        } else if (destination == "navbar") {
+          window.location.replace("navbar.html");
+        }
+    
+      </script>
 
-      <div>
-        <h3>Ways to Manage Stress:</h3>
-        <ul>
-          <img src="https://www.dreamhost.com/blog/wp-content/uploads/2019/04/small-biz-manage-stress_opt.jpg">
-          <li>..</li>
-        </ul>
-        <ul>
-          <img src="https://www.dreamhost.com/blog/wp-content/uploads/2019/04/small-biz-manage-stress_opt.jpg">
-          <li>..</li>
-        </ul>
-        <ul>
-          <img src="https://www.dreamhost.com/blog/wp-content/uploads/2019/04/small-biz-manage-stress_opt.jpg">
-          <li>..</li>
-        </ul>
-      </div>
     </div>
 
   </div>

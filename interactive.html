@@ -17,69 +17,62 @@
     <h1 class="display-1 text-center">Stress Quiz</h1>
     <div>
       <h3>Purpose:</h3>
-        <p>To inform if you are stressed and ways to manage it</p>
+      <p>To inform if you are stressed and ways to manage it</p>
       <br></br>
     </div>
 
     <h3>Questions:</h3>
-
-    <form class="needs-validation" action="forms.html" method="get">
-      <!-- radio 1-->
-      <h4>1. Align these questions to common reasons of stress from info.html</h4>
-      <input type="radio" id="first" name="question1" value="Yes">
-      <label for="first">Yes</label>
-      <br>
-      <input type="radio" id="first" name="question1" value="No">
-      <label for="first">No</label>
-      </br>
-      <input type="radio" id="first" name="question1" value="No">
-      <label for="first">No</label>
-      <br>
-      <input type="radio" id="first" name="question1" value="No">
-      <label for="first">No</label>
-      </br>
-      <br></br>
-
-      <!-- radio 2-->
-      <h4>2. Align these questions to common reasons of stress from info.html</h4>
-      <input type="radio" id="second" name="question2" value="Yes">
-      <label for="second">Yes</label>
-      <br>
-      <input type="radio" id="second" name="question2" value="No">
-      <label for="second">No</label>
-      </br>
-      <input type="radio" id="second" name="question2" value="No">
-      <label for="second">No</label>
-      <br>
-      <input type="radio" id="second" name="question2" value="No">
-      <label for="second">No</label>
-      </br>
-      <br></br>
-
-      <!-- radio 3-->
-      <h4>3. Align these questions to common reasons of stress from info.html</h4>
-      <input type="radio" id="third" name="sage" value="Yes">
-      <label for="third">Yes</label>
-      <br>
-      <input type="radio" id="third" name="sage" value="No">
-      <label for="third">No</label>
-      </br>
-      <input type="radio" id="third" name="sage" value="No">
-      <label for="third">No</label>
-      <br>
-      <input type="radio" id="third" name="sage" value="No">
-      <label for="third">No</label>
-      </br>
-
-      <!-- submit -->
-      <form>
+    <div>
+      <form class="needs-validation" action="forms.html" method="get">
+        <!-- radio 1-->
+        <h4>1. How are you feeling today (mentally, physically, emotionally)?</h4>
+        <input type="radio" id="first" name="question1" value="Good">
+        <label for="first">Good</label>
         <br>
-        <button onclick="location.href='results.html'" type="button">Submit</button>
-
+        <input type="radio" id="first" name="question1" value="Not bad">
+        <label for="first">Not bad</label>
         </br>
-      </form>
+        <input type="radio" id="first" name="question1" value="Terrible">
+        <label for="first">Terrible</label>
+        <br></br>
+    </div>
+
+    <!-- form check -->
+    <h4>2. Which of the following do you think you struggle the most?</h4>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="Family" id="secondp1" name="question2">
+      <label class="form-check-label" for="Family">Family</label>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="School and/or work" id="secondp2" name="question2">
+      <label class="form-check-label" for="School and/or work">School and/or work</label>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="Personal" id="secondp3" name="question2">
+      <label class="form-check-label" for="Personal">Personal</label>
+    </div>
+
+    <!-- text -->
+    <br></br>
+    <div class="form-group">
+      <label for="writestuff">
+        <h4>3. Do you think stress is a good thing? Why or why not?</h4>
+      </label>
+      <textarea class="form-control" id="writestuff" name="writestuff" rows="3" required></textarea>
+    </div>
+    </form>
+
+    <!-- submit -->
+    <form>
+      <br>
+      <button onclick="location.href='results.html'" type="button">Submit</button>
+      </br>
+    </form>
 
   </div>
+
   <!--Bootstrap and other JS scripts-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
